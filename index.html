@@ -1,0 +1,275 @@
+<html>
+    <head>    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LifeCare</title>
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
+        <link rel="stylesheet" href="/css/style.css">
+
+        
+    </head>
+
+    <body>
+        <script src="/javascript/script.js"></script>
+        <header>
+
+            <div id="menu-bar" class="fas fa-bars"></div>
+            <a href="#" class="logo">LifeCare</a>
+        
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#services">Speciality</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#doctors">Doctors</a>
+                <a href="#excellence">OurExcellence</a>
+                <a href="#contact">ContactUs</a>
+                <a href="#about">AboutUs</a>
+            </nav>
+            
+        </header>
+
+        <!-- Home Section Begins-->
+
+        <section class="home" id="home">
+            <div class="content">
+                <h2>Hospital is the greatest possesion</h2>
+            </div>
+        </section>
+
+
+        <!-- Home Section Ends-->
+
+
+        <!-- Services Section Starts-->
+        <section class="services" id="services">
+            <h3 class="heading">Our specialists</h3>
+
+            <div class="box-container">
+                <div class="box">
+                    <i class="fa-solid fa-heart"></i>
+                    <h2>Cardiology</h2>
+                    <p></p>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-lungs"></i>
+                    <h2>Pulmonologists</h2>
+                    <p></p>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-x-ray"></i>
+                    <h2>Bone Marraow Transplant</h2>
+                    <p></p>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-bone"></i>
+                    <h2>Orthopaedics</h2>
+                    <p></p>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-brain"></i>
+                    <h2>Neurologist </h2>
+                    <p></p>
+                </div>
+                
+            </div>
+        </section>
+        <!-- Services Section Ends-->
+
+
+        <!-- Gallery Section Starts-->
+
+        
+        <section class="gallery" id="gallery">
+            <h3 class="heading">GALLERY</h3>
+
+            <div class="box-container">
+                <div class="box">
+                    <img src="images/clinic-1.jpg">
+                </div>  
+
+                <div class="box">
+                    <img src="images/clinic-2.jpg">
+                </div>
+
+                <div class="moreBox">
+                    <div class="box" >
+                        <img src="images/clinic-3.jpg">
+                    </div>
+
+                    <div class="box" >
+                        <img src="images/clinic-4.jpg">
+                    </div>
+
+                    <div class="box" >
+                        <img src="images/clinic-5.jpg">
+                    </div>
+
+                    <div class="box" >
+                        <img src="images/clinic-6.jpg">
+                    </div>
+
+                </div>
+            </div>
+                
+            <div class="more">
+                <button id="moreBtn" class ="btn"  onclick="seeMoreLess()">See More</button> 
+            </div>
+
+        </section>
+
+        <!-- Gallery Section Ends-->
+
+        <!-- Doctors Section Starts-->
+
+        <section class="doctors" id="doctors">
+            <h3 class="heading">DOCTORS</h3>
+            <div class="scrollable">
+                <div class="row">
+                    <div class="image">
+                        <img src="images/doctor.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Dr.Anuj Kumar</h2>
+                        <p>Neurologist</p>
+                        <p>MBBS, MD</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="image">
+                        <img src="images/doctor.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Dr.Minki Taneja</h2>
+                        <p>Cardiologist</p>
+                        <p>MBBS, MD</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="image">
+                        <img src="images/doctor.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h2>Dr.Srishti Pahuja</h2>
+                        <p>Pulmonologist</p>
+                        <p>MBBS, MD</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Doctors Section Ends-->
+
+        <!-- Excellence Section Starts-->
+        <section class="services" id="excellence">
+            <h3 class="heading">Our Excellence</h3>
+
+            <div class="box-container">
+                <div class="box">
+                    <i class="fa-solid fa-user-doctor"></i>
+                    <h2>100+ Doctors</h2>
+                    <p></p>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-hospital"></i>
+                    <h2>20+ Centres</h2>
+                    <p></p>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-bed"></i>
+                    <h2>15000+ Patients treated everyday</h2>
+                    <p></p>
+                </div>                
+            </div>
+        </section>
+        <!-- Exccellence Section Ends-->
+
+        <!-- Contact Section Starts-->
+
+        <section class="contact" id="contact">
+            <h3 class="heading">Contact Us</h3>
+
+            <div class="row">
+                <div class="image">
+                    <img src="images/contact.jpg" alt="">
+                </div>
+
+                <form action="">
+                    <div class="inputBox">
+                        <input type="text" placeholder="name">
+                        <input type="email" placeholder="email">
+                        <input type="tel" placeholder="number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                    </div>
+
+                    <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
+                    <input type="submit" value="send" class="btn">
+                </form>
+            </div>
+        </section>
+
+        <!-- Contact Section Ends-->
+
+        <!-- AboutUs Section Starts-->
+
+        <section class="about" id="about">
+            <h3 class="heading">About Us</h3>
+            <div class="box-container">
+                <div class="box">
+                    <p>Our reputation for outstanding care and family-like atmosphere, together 
+                        with advanced medical technology and facilities ensures we attract leading 
+                        consultants and specialists from the industry to work with us. All our clinicians are 
+                        board-certified and come with very high credentials within their field of speciality</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- AboutUs Section Ends-->
+
+
+        <!-- Footer Section Starts-->
+
+        <section class="footer">
+            <div class="box-container">
+                <div class="box">
+                    <h3>Quick Links</h3>
+                    <a href="#home">Home</a>
+                    <a href="#services">Services</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#contact">ContactUs</a>
+                    <a href="#about">AboutUs</a>
+                </div>
+
+                <div class="box">
+                    <h3>Social Media</h3>
+                    <a href="#"><i class="fab fa-facebook"></i>  Facebook</a>
+                    <a href="#"><i class="fab fa-instagram"></i>  Instagram</a>
+                    <a href="#"><i class="fab fa-twitter"></i>  Twitter</a>
+                </div>
+
+                <div class="box">
+                    <h3>Our Solutions</h3>
+                    <a href="#">Critical Care at Home</a>
+                    <a href="#">Nursing Care at Home</a>
+                    <a href="#">Doctor at Home</a>
+                    <a href="#">Sample Collection at Home</a>
+                    <a href="#">X-Ray at Home</a>
+                </div>
+
+                <div class="box">
+                    <h3>Regd. Address</h3>
+                    <p>43/12 Sushant Lok, Gurugram</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section Ends-->
+
+        <script src="javaScript/script.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    </body>
+</html>
