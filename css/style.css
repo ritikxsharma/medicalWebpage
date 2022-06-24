@@ -315,12 +315,56 @@ header .icons i:hover{
     html{
         font-size: 55%;
     }
+
+    .scrollable{
+        margin:4px, 4px;
+        padding:4px;
+        width: 150rem;
+        height: 30rem;
+        overflow-x: hidden;
+        overflow-y: auto;
+        text-align:justify;
+    }
+     
+    .scrollable .row .image img{
+        width: 50%;
+    }
+    
+    .scrollable .row .content h2{
+        font-size: 4rem;
+    }
+    
+    .scrollable .row .content p{
+        font-size: 4rem;
+    }
 }
 
 @media (max-width:991px) {
     
     header{
         padding: 2rem;
+    }
+
+    .scrollable{
+        margin:4px, 4px;
+        padding:4px;
+        width: 150rem;
+        height: 30rem;
+        overflow-x: hidden;
+        overflow-y: auto;
+        text-align:justify;
+    }
+     
+    .scrollable .row .image img{
+        width: 50%;
+    }
+    
+    .scrollable .row .content h2{
+        font-size: 4rem;
+    }
+    
+    .scrollable .row .content p{
+        font-size: 4rem;
     }
 }
 
@@ -350,6 +394,28 @@ header .icons i:hover{
         padding: 1rem;
         margin: 1rem 0;
         background: #222;
+    }
+
+    .scrollable{
+        margin:4px, 4px;
+        padding:4px;
+        width: 120rem;
+        height: 30rem;
+        overflow-x: hidden;
+        overflow-y: auto;
+        text-align:justify;
+    }
+    
+    .scrollable .row .image img{
+        width: 25%;
+    }
+    
+    .scrollable .row .content h2{
+        font-size: 2.5rem;
+    }
+    
+    .scrollable .row .content p{
+        font-size: 2.5rem;
     }
 
 }
