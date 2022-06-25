@@ -39,7 +39,7 @@ section{
     color: rgb(77, 182, 129);
 }
 
-header{
+.header{
     position: fixed;
     top: 0;
     left: 0;
@@ -52,35 +52,25 @@ header{
     padding: 2rem 9%;
 }
 
-header .logo{
+.header .logo{
     font-size: 2.5rem;
-    font-weight: bold;
+    color: #080808;
+}
+
+.header .logo i{
+    color: #080808;
+}
+
+
+.header .navbar a{
     color: #fff;
-    /* text-transform: uppercase; */
+    font-size: 1.5rem;
+    margin-left: 1.4rem;
 }
 
-header .navbar a{
-
-    color: #fff;
-    font-size: 2rem;
-    margin: .8rem;
-
-}
-
-header .navbar a:hover{
-    color: blue;
-    font-size: 2.2rem;
-}
-
-header .icons i{
-    font-size: 2.5rem;
-    color: #fff;
-    cursor: pointer;
-}
-
-header .icons i:hover{
-    font-size: 2.7rem;
-    color: blue;
+.header .navbar a:hover{
+    color: #080808;
+    /* font-size: 2.2rem; */
 }
 
 #menu-bar{
@@ -141,29 +131,32 @@ header .icons i:hover{
     color: #333;
 }
 
-.gallery .box-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
+.gallery .box-container .defaultBox {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
 }
 
-.gallery .moreBox {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    display: none;
+.gallery .box-container .moreBox {
+    display: hidden;
+    display: grid;
+    grid-template-columns: auto auto ;
+    padding: 10px;
 }
 
-.gallery .box-container .box , .gallery .moreBox .box{
-    overflow: hidden;
-    border: .2rem solid #555;
-    flex: 1 1 50rem;
-    height: 25rem;
-    margin-top: 0.7rem;
-    position: relative;
+.gallery .box-container .defaultBox .box{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
 }
 
-.gallery .box-container .box img , .gallery .moreBox .box img {
+.gallery .box-container .moreBox .box{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+}
+
+.gallery .box-container .defaultBox .box img , .gallery .box-container .moreBox .box img {
     height: 100%;
     width: 100%;
     object-fit: fill;
@@ -175,38 +168,36 @@ header .icons i:hover{
     justify-content: center;
 }
 
-
-.scrollable{
-    margin:4px, 4px;
-    padding:4px;
-    width: 120rem;
-    height: 30rem;
-    overflow-x: hidden;
-    overflow-y: auto;
-    text-align:justify;
+.doctors .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:2rem;
 }
 
-.scrollable .row{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    align-items: center;
+.doctors .box-container .box{
+    text-align: center;
+    border-radius: .5rem;
+    border:.2rem solid #5ca781;
+    padding:2rem;
 }
 
-/* .scrollable .row .image{
-    flex: 1 1 1rem;
-} */
-
-.scrollable .row .image img{
-    width: 40%;
+.doctors .box-container .box img{
+    height: 20rem;
+    width: 20rem;
+    border-radius: .5rem;
+    border:.2rem solid #5ca781;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
-.scrollable .row .content h2{
-    font-size: 3.5rem;
+.doctors .box-container .box h3{
+    color:#080808;
+    font-size: 2.5rem;
 }
 
-.scrollable .row .content p{
-    font-size: 3.5rem;
+.doctors .box-container .box span{
+    color: rgb(70, 102, 79);
+    font-size: 1.5rem;
 }
 
 .contact .row{
@@ -315,56 +306,12 @@ header .icons i:hover{
     html{
         font-size: 55%;
     }
-
-    .scrollable{
-        margin:4px, 4px;
-        padding:4px;
-        width: 150rem;
-        height: 30rem;
-        overflow-x: hidden;
-        overflow-y: auto;
-        text-align:justify;
-    }
-     
-    .scrollable .row .image img{
-        width: 50%;
-    }
-    
-    .scrollable .row .content h2{
-        font-size: 4rem;
-    }
-    
-    .scrollable .row .content p{
-        font-size: 4rem;
-    }
 }
 
 @media (max-width:991px) {
     
     header{
         padding: 2rem;
-    }
-
-    .scrollable{
-        margin:4px, 4px;
-        padding:4px;
-        width: 150rem;
-        height: 30rem;
-        overflow-x: hidden;
-        overflow-y: auto;
-        text-align:justify;
-    }
-     
-    .scrollable .row .image img{
-        width: 50%;
-    }
-    
-    .scrollable .row .content h2{
-        font-size: 4rem;
-    }
-    
-    .scrollable .row .content p{
-        font-size: 4rem;
     }
 }
 
@@ -395,29 +342,6 @@ header .icons i:hover{
         margin: 1rem 0;
         background: #222;
     }
-
-    .scrollable{
-        margin:4px, 4px;
-        padding:4px;
-        width: 120rem;
-        height: 30rem;
-        overflow-x: hidden;
-        overflow-y: auto;
-        text-align:justify;
-    }
-    
-    .scrollable .row .image img{
-        width: 25%;
-    }
-    
-    .scrollable .row .content h2{
-        font-size: 2.5rem;
-    }
-    
-    .scrollable .row .content p{
-        font-size: 2.5rem;
-    }
-
 }
 
 @media (max-width:450px)
