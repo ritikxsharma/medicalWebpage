@@ -30,6 +30,23 @@ function seeMoreLess() {
 
 
 
+// function showDefault() {
+//     const img = document.getElementById('doc');
+
+//     img.addEventListener('error', function handleError() {
+
+//     const defaultImage =
+//     './images/doctor-images/default.png'
+
+//     img.src = defaultImage;
+//     img.alt = 'default';
+//     });
+// }
+
+
+
+
+
 
 
 
